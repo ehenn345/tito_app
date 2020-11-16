@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # end
   namespace :api do
     get "/titos" => "titos#index"
+    post "/titos" => "titos#create"
   end
 end
 
