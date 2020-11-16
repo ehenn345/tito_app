@@ -1,0 +1,8 @@
+@titos.map do |tito|
+
+{
+  name: tito.name,
+  age: tito.age,
+  location: tito.location
+}
+end
