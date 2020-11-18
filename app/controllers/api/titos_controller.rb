@@ -15,6 +15,12 @@ class Api::TitosController < ApplicationController
     render 'show.json.jb'
   end
 
+  def show
+    @tito = Tito.find_by(id: params[:id])
+    render 'show.json.jb'
+    end
+
+
   def update
     @tito = Tito.find_by(id: params[:id])
     @tito.name = params[:name] || @tito.name
