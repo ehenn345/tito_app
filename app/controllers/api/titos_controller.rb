@@ -30,4 +30,10 @@ class Api::TitosController < ApplicationController
     render 'show.json.jb'
   end
 
+  def destroy
+    tito = Tito.find_by(id: params[:id])
+    tito.destroy
+    render json: {message: "Successfully destroyed"}
+  end
+
 end

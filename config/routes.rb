@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     post "/titos" => "titos#create"
     get "/titos/:id" => "titos#show"
     patch "/titos/:id" => "titos#update"
+    delete "/titos/:id" => "titos#destroy"
   end
 end
 
