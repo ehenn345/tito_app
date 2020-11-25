@@ -1,8 +1,10 @@
-@titos.map do |tito|
+# @titos.map do |tito|
 
-{
-  name: tito.name,
-  age: tito.age,
-  location: tito.location
-}
-end
+# {
+#   name: tito.name,
+#   age: tito.age,
+#   location: tito.location
+# }
+# end
+
+@titos 

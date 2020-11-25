@@ -1,7 +1,8 @@
 class Api::TitosController < ApplicationController
 
   def index 
-    @titos = Tito.all 
+    # @titos = Tito.all
+    @titos = HTTP.get("http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=#{Rails.application.credentials.news_api[:api_key]}").parse
     render "index.json.jb"
   end
 
